@@ -22,7 +22,7 @@ class DemoActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val warnaFont = 0xff008080
+        val warnaFont = 0xfff4f4ea
         setContent {
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
@@ -36,19 +36,24 @@ class DemoActivity : ComponentActivity() {
                    color = Color.Gray,
                    modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        text = "Hello Selasa, good to me please",
+                        text = "Seventeen righ here",
                         fontSize = 24.sp,
-                        modifier = Modifier.padding(16.dp, 16.dp, 16.dp, 16.dp),
+                        modifier = Modifier.padding(
+                            start = 24.dp,
+                            top = 16.dp,
+                            end = 16.dp,
+                            bottom = 16.dp
+                        ),
                         color = Color(warnaFont)
                     )
                 }
                 Surface(
-                    color = Color.Magenta,
+                    color = Color.Black,
                     modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        text = "don't blame yourself ok?",
+                        text = "It's ok, I won't let you down",
                         fontSize = 24.sp,
-                        modifier = Modifier.padding(16.dp, 16.dp, 16.dp, 4.dp),
+                        modifier = Modifier.padding(24.dp, 16.dp, 16.dp, 16.dp),
                         color = Color(warnaFont)
                     )
                 }
@@ -56,3 +61,7 @@ class DemoActivity : ComponentActivity() {
         }
     }
 }
+
+//@preview(showbackground = true, showSystemU1)
+//@composable
+//fun EchoText(){
