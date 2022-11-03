@@ -47,6 +47,10 @@ fun EchoText(){
             value = displayedText,
             onValueChange = {
                 displayedText = it
+                //unit -> tidak mereturn apa2
+                //lambda function
+                //val toUpperCase: (String) -> String = {param:String
+                //param.uppercase()}
             },
             label = {Text(text = "Nama")}
             )
